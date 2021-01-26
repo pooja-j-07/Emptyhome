@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
+.titlename{
+  font-size: 0.8em;
+  color: rgb(56, 55, 55);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logotitle{
+height: auto;
+width: 7.7em;
+padding: 0.5em 0em 1em 1.9em;
+background-color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0px;
+  font-family: sans-serif;
   color: white;
+  border: 0.3px solid rgb(170, 168, 168);
+}
+.Navbar__Link {
+  margin-top: 1em;
+  padding-right: 8px;
+  padding-top: 0.7em;
+  display: inline;
+  height: 3em;
+  color:rgb(21, 123, 219);
+}
+.Navbar__Items {
+  display: flex;
+}
+.inviting{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+
+}
+.inviting h6{
+  padding: 0.2em 0em 0em 0.2em ;
+  list-style: none;
+  text-decoration: none;
+}
+.inviting h6:hover{
+  list-style: none;
+  text-decoration: none;
+}
+.Navbar__Itemrow{
+  display: flex;
+  height: 4.8em;
+}
+.Navbar__Items--right {
+  margin-left:auto;
+}
+.Navbar__Link-toggle {
+  display: none;
+}
+.navtext{
+  color: rgb(56, 55, 55);
+  padding: 0em 0em 0.3em 0em;
+  text-decoration: none;
+  list-style:none;
+  float: right;
+}
+.navtext a{
+  text-decoration: none;
+  width: 8.5em;
+  text-indent: 4vh;
+  line-height: 3.5em;
+  color: black;
+  display: flex;
+  text-decoration: none;
+  list-style:none;
+  font-size: 0.9em;
+}
+.navtext a:hover{
+  background-color: rgb(20, 92, 248);
+  color: white;
+  text-decoration: none;
+}
+.vertical-nav {
+  position: fixed;
+  top: 0em;
+  left: 0;
+  width: 7.8em;
+  height: 100%;
+  overflow-y: auto;
+  color: black;
+  border: 0.3px solid rgb(170, 168, 168);
+}
+.row{
+  text-decoration: none;
+  list-style:none;
+  position: relative;
+}
+.col{
+  padding: 1.5em 0em 0em 0em ;
+  height: 5em;
+}
+.active{
+}
+.active a{
+  text-decoration: none;
+  list-style: none;
+}
+.active a:hover{
+  text-decoration: none;
+  list-style: none;
+}
+.pass-wrapper {
+  position: fixed;
+  display:block;
+  padding-bottom: 1.7em;
+  background:#fff;
+  color: rgb(46, 45, 45);
+  height: 0em;
+}
+.icon{
+min-width: 1.5em;
+text-align: center;
+font-weight: 0;
+}
+.control{
+  width: 100%;
+  outline: none;
+  padding-left: 0.2em;
+  border: none;
+}
+.control:focus{
+  border: 1px solid grey;
+
+}
+.input-icons{
+  box-sizing: border-box;
+  border: 0.3px solid rgb(170, 168, 168);
+  width: 12em;
+  border-radius: 0.2em;
+  color: rgb(112, 110, 110);
+}
+.input-container{
+  display: flex;
+  width: 100%;
+  font-size: small;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  margin: auto;
+}
+.contain-text{
+  height: 8em;
+  padding-top: 2em;
+  width: 20em;
+  text-align: center;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.descphara{
+  padding-top: 1.2em;
+  font-size: 1em;
+  width:15em;
+  color: rgb(90, 89, 89);
+margin: auto;
+text-align: center;
+}
+.header{
+  color: rgb(90, 89, 89);
+font-size:1.1em;
+font-weight: 5em;
+}
+
+.homeimg{
+  background-color: white;
+}
+.formdata{
+  width: 15em;
+  margin :auto;
+  padding-top: 2em;
+  align-items: center;
+  text-align: center;
+
+}
+.btn{
+  cursor:pointer;  
+  width:14.4em;
+  height: 2.3em;
+  padding-top: 1em;
+  color: white;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .Navbar {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+    
+.Navbar__Items {
+    display:none;
+    flex-direction: row;
+
   }
+    
+.Navbar__Items--right {
+    margin-left:auto;
+  }
+    
+.Navbar__ToggleShow {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1em;
+   } 
+   .toggleicon{
+     color:rgb(40, 113, 221);
+   padding: 0em 0em 0em 0em;
+  
+  }
+  .row{
+    text-decoration: none;
+    list-style:none;
+    padding: 0em 0em 0em 0em;
+    position: relative;
+  }
+  .active{
+    padding: 0em 0em 0em 0em;
+      }
+      .active a{
+        padding: 0;
+
+      }
 }
