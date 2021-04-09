@@ -1,0 +1,44 @@
+const mongoose = require('mongoose')
+const template= new mongoose.Schema({
+    productname:{
+        type:String,
+        required:true
+    },
+    productbrand:{
+        type:String,
+        required:true
+    },
+    productdescription:{
+        type:String,
+        required:true
+    },
+    hsncode:{
+        type:String,
+        required:true
+    },
+    skuid:{
+        type:String,
+        required:true
+    },
+    modelnumber:{
+        type:Number,
+        required:true
+    },    
+    price:{
+        type:Number,
+        required:true
+    },
+    usageinstructions:{
+        type:String,
+        required:true
+    }
+    newtype:{
+        type:String,
+        required:true
+    }
+    updatetype:{
+        type:String,
+        required:true
+    }
+})
+module.exports = mongoose.model('mytable',template)

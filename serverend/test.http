@@ -1,0 +1,13 @@
+POST http://localhost:4000/app/products
+Content-Type: application/json
+
+{
+            "productname": "booking",
+          "productbrand": "books",
+          "productdescription": "dujfgiuo",
+          "hsncode": "dsdrhgj",
+          "skuid": "gjkjjkkl",
+          "modelnumber": "779009",
+          "price": "6899",
+          "usageinstructions": "gcghvkj"
+}

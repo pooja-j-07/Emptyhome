@@ -1,8 +1,7 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
-import SubmitButton from "./SubmitButton";
-
-class Emptyhome extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <>
@@ -21,7 +20,7 @@ class Emptyhome extends React.Component {
               alt="logoimage"
             ></img>
             <br />
-            <SubmitButton text="ADD PRODUCT" type="ADDPRODUCT" />
+            <NavLink to="/Products" className="btn btn-primary shadow-none">Add Products</NavLink>
           </form>
         </div>
       </>
@@ -29,4 +28,4 @@ class Emptyhome extends React.Component {
   }
 }
 
-export default Emptyhome;
+export default Home;
